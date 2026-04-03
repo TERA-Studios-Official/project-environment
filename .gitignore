@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-.vs/
-Logs/
-UserSettings/
-obj/
-=======
 # Visual Studio folders
 .vs/
 
@@ -18,4 +12,3 @@ Logs/
 
 # User-specific Unity settings do share important changes here with the team!
 UserSettings/
->>>>>>> main
