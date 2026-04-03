@@ -1452,33 +1452,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5747744253409819627, guid: 5d9b000d6905b7c4fb46da23d983fa59, type: 3}
   m_PrefabInstance: {fileID: 5447425546955349936}
   m_PrefabAsset: {fileID: 0}
---- !u!50 &912348297
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 912348296}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &937519666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3617,17 +3590,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Confetti Original
       objectReference: {fileID: 0}
-    - target: {fileID: 5747744253409819627, guid: 5d9b000d6905b7c4fb46da23d983fa59, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5747744253409819627, guid: 5d9b000d6905b7c4fb46da23d983fa59, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 912348297}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d9b000d6905b7c4fb46da23d983fa59, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
