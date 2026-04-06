@@ -12,7 +12,7 @@ public class ScreenManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        ToLevelSelect();
+        //ToLevelSelect();
     }
 
     public void ToLevelSelect()
