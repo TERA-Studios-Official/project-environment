@@ -17,13 +17,20 @@ using UnityEngine.UIElements;
 
 public class Tutorial2Manager : MonoBehaviour
 {
+    public GameObject menu;
+
     public GameObject balloon;
-    public GameObject panel;
     int wind;
+
+    int timer;
 
     public AudioSource blowSound1;
     public AudioSource blowSound2;
     public AudioSource blowSound3;
+
+    public GameObject Text1;
+    public GameObject Text2;
+    public GameObject Text3;
 
     public SpriteRenderer renderer;
     public SpriteChanger sc;
@@ -37,6 +44,7 @@ public class Tutorial2Manager : MonoBehaviour
     private bool tutorial2 = false;
     void Start()
     {
+        timer = 0;
         wind = 0;
         balloonState = 0;
         readyForDialogue = true;
@@ -64,23 +72,28 @@ public class Tutorial2Manager : MonoBehaviour
             switch (balloonState)
             {
                 case 0:
+                    Text1.SetActive(true);
                     blowSound1.Play();
                     readyForDialogue = false;
                     break;
 
                 case 1:
+                    Text1.SetActive(false);
+                    Text2.SetActive(true);
                     blowSound1.Stop();
                     blowSound2.Play();
                     readyForDialogue = false;
                     break;
 
                 case 2:
+                    Text2.SetActive(false);
                     blowSound2.Stop();
                     blowSound3.Play();
                     readyForDialogue = false;
                     break;
 
                 default:
+                    Text3.SetActive(true);
                     blowSound1.Stop();
                     blowSound2.Stop();
                     blowSound3.Stop();
@@ -111,7 +124,23 @@ public class Tutorial2Manager : MonoBehaviour
         else if (balloonState == 3 && allConfetti.Count < 42)
         {
             CreateConfetti();
-            panel.SetActive(true);
+        }
+        else if (allConfetti.Count >= 42)
+        {
+            timer++;
+        }
+
+        if (timer > 700)
+        {
+            Text3.SetActive(false);
+            allConfetti.Clear();
+
+            timer = 0;
+            wind = 0;
+            balloonState = 0;
+            readyForDialogue = true;
+
+            menu.SetActive(true);
         }
     }
 
