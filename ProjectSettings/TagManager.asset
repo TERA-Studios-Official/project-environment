@@ -42,17 +42,18 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Layer 1
-    uniqueID: 3912636715
+    uniqueID: 3884300065
     locked: 0
   - name: Layer 2
-    uniqueID: 252693247
+    uniqueID: 931056495
     locked: 0
   - name: Layer 3
-    uniqueID: 2784107009
+    uniqueID: 2398973933
     locked: 0
   - name: UI
-    uniqueID: 203407999
+    uniqueID: 1163879857
     locked: 0
   m_RenderingLayers:
   - Default
+  - Layer 1
   m_MigratedRenderPipelines: []
