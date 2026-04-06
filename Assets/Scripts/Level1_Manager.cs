@@ -127,7 +127,7 @@ public class Level1_Manager : MonoBehaviour
         countdown.text = "1";
         windCharge = true;
         yield return new WaitForSecondsRealtime(1);
-        countdown.text = "Go!";
+        countdown.text = "Blaas!";
         yield return new WaitForSecondsRealtime(1);
         countdown.text = "";
     }
