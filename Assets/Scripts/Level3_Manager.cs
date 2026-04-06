@@ -65,38 +65,6 @@ public class Level3_Manager : MonoBehaviour
         }
     }
 
-    /*
-    void Update()
-    {
-
-        if (Input.GetKeyDown(KeyCode.Return) && startLevel3 == true)
-        {
-            startLevel3 = false;
-            StartCoroutine(StartCountdown());
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && windCharge == true)
-        {
-            blowing = true;
-        }
-
-        if (Input.GetKeyUp(KeyCode.Space) && windCharge == true)
-        {
-            blowing = false;
-            windCharge = false;
-            startLevel3 = true;
-            timesBlown++;
-
-            if (timesBlown >= 3)
-            {
-                startLevel3 = false;
-                levelDone = true;
-                StartCoroutine(LevelComplete());
-            }
-        }
-    }
-     * */
-
     public IEnumerator StartCountdown()
     {
         countdown.text = "3";
@@ -106,7 +74,7 @@ public class Level3_Manager : MonoBehaviour
         countdown.text = "1";
         windCharge = true;
         yield return new WaitForSecondsRealtime(1);
-        countdown.text = "Go!";
+        countdown.text = "Blaas!";
         yield return new WaitForSecondsRealtime(1);
         countdown.text = "";
     }
