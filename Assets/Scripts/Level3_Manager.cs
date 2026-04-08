@@ -168,6 +168,7 @@ public class Level3_Manager : MonoBehaviour
         else
         {
             speed = 0f;
+            Island.rotation = Quaternion.Euler(0, 0, 0);
             StartCoroutine(LevelComplete());
         }
     }
