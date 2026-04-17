@@ -1,4 +1,4 @@
-// (WIP) Tutorial2Manager.cs
+// Tutorial2Manager.cs
 //
 // Description:
 // Manages the main game functionalities.
@@ -130,15 +130,21 @@ public class Tutorial2Manager : MonoBehaviour
             timer++;
         }
 
-        if (timer > 700)
+        if (timer > 500)
         {
+            Text1.SetActive(false);
+            Text2.SetActive(false);
             Text3.SetActive(false);
             allConfetti.Clear();
 
             timer = 0;
             wind = 0;
             balloonState = 0;
+            balloon.transform.localScale = new Vector3(0.4387329f, 0.3563841f, 0.1707581f);
+            ;
             readyForDialogue = true;
+
+            tutorial2 = false;
 
             menu.SetActive(true);
         }
