@@ -33,13 +33,6 @@ public class Level2_Manager : MonoBehaviour
     public int Model2_State = 0;
     public int Model3_State = 0;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
 

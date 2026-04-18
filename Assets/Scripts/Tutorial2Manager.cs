@@ -1,13 +1,10 @@
 // Tutorial2Manager.cs
 //
 // Description:
-// Manages the main game functionalities.
-//
-// Author:
-// t.teulings
+// Manages the balloon tutorial.
 //
 // Date of last amendment:
-// 03/04/2026
+// 17/04/2026
 
 using System.Collections.Generic;
 using Unity.VisualScripting;

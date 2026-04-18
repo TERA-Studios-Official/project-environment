@@ -1,3 +1,11 @@
+// ScreenManager.cs
+//
+// Description:
+// Manages screen actions.
+//
+// Date of last amendment:
+// 17/04/2026
+
 using System;
 using UnityEngine;
 using TMPro;
@@ -8,12 +16,6 @@ public class ScreenManager : MonoBehaviour
     public Level1_Manager Level1_Manager;
     public Level2_Manager Level2_Manager;
     public Level3_Manager Level3_Manager;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        //ToLevelSelect();
-    }
 
     public void ToLevelSelect()
     {

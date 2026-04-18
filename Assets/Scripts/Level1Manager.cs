@@ -1,3 +1,11 @@
+// Level1Manager.cs
+//
+// Description:
+// Manages the chompy minigame.
+//
+// Date of last amendment:
+// 17/04/2026
+
 using System.Collections;
 using TMPro;
 using UnityEditor.Experimental.GraphView;
@@ -28,13 +36,11 @@ public class Level1_Manager : MonoBehaviour
     public bool levelDone = false;
     public bool level1Completed = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Wind.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         berryAnimator.SetInteger("berryState", timesBlown);

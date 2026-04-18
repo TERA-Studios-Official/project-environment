@@ -1,3 +1,11 @@
+// ConfettiManager.cs
+//
+// Description:
+// Manages the confetti clones.
+//
+// Date of last amendment:
+// 17/04/2026
+
 using UnityEngine;
 
 public class ConfettiManager : MonoBehaviour

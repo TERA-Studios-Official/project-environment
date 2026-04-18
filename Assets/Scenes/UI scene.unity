@@ -1555,8 +1555,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7b9185137b8bea42b71d7ff5f01c1c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  registreerPagina: {fileID: 1341178953}
-  welkomPagina: {fileID: 729835635}
 --- !u!4 &151285365
 Transform:
   m_ObjectHideFlags: 0
